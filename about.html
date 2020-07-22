@@ -1,0 +1,214 @@
+	<!Doctype html>
+	<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	body{
+	background: #B0E0E6; /*scrollbars */
+	box-sizing:border-box;
+	font-size:20px;
+	font-family:arial;
+	}
+			/*scrollbar*/
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+	::-webkit-scrollbar-track {
+	  box-shadow: inset 0 0 5px grey; 
+	  border-radius: 0px;
+	}
+
+	::-webkit-scrollbar-thumb {
+	  background: #4169E1;
+	  border-radius: 5px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+	background:#6495ED;
+	}
+	/*navigation bar*/
+	div.nav{
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+	div.nav:hover{
+	border-shadow: 5px 3px 2px black;
+	transition:0.3s
+	}
+	ul {
+	  list-style-type: none;
+	  margin: 		0;
+	  padding:		10px;
+	  overflow:		auto;
+	 background:	#4169E1;
+	  position: 	-webkit-sticky; /* Safari */
+	  position: 	sticky;
+	  top: 			0;
+	}
+	li {
+	  float: left;
+	}
+	li a {
+	  display:block;
+	  color: white;
+	  text-align: center;
+	  padding: 5px 20px;
+	  text-decoration: none;
+	}
+
+	li a:hover {
+	background: linear-gradient(to bottom right, #00ffcc 0%, #ccff33 117%);
+	border:		groove #ccccb3;
+	}
+
+	.active {
+	background-color:  #c2d6d6;
+	border:	groove #ccccb3;
+	}
+	.fa {
+	  padding: 0px;
+	  font-size: 30px;
+	  width: 50px;
+	  text-align:center;
+	  text-decoration: none;
+	  margin:auto;
+	  overflow: auto;
+	float:right;
+	}
+	.fa:hover {
+		opacity: 0.7;
+	}
+	/*CARD*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  background:#4169E1;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background:#ccccb3
+}
+.container {
+  padding: 10px 16px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+	div.image{
+	padding: 5px;
+	}
+	h1{
+	text-align:center;
+	border: 5px groove #ccccb3;
+	padding:5px;/*top right bottom left*/
+	margin:	0px;
+	text-shadow: 1.5px 3px 2px black;
+	text-color:#ccccb3;
+	}
+}
+	.header{
+	text-align:center;
+	}
+	.header:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	background:#ccccb3;
+	opacity: 0.7;
+	}
+	div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+	div.footer{
+	text-align:left;
+	transition: 0.3s;
+	margin-top:10px;
+	margin-bottom:10px;
+	background:	#4169E1;
+  position: fixed;
+  bottom: 0;
+  width:99%;
+	}
+	.footer:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	background:#ccccb3;
+	opacity: 0.7;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+	</style>
+	<body>
+		<title>virtual meet</title>
+		<div class="header">
+	<h1 style="color:#ccccb3;">Virtual Bio</h1>
+	</div>
+	<div class="nav">
+	<ul class="nav"> 										<!--navigation bar-->
+	 <li style="color:#ccccb3;text-shadow: 2px 3px 2px black;"><a href="index.html" target="_blank">Home</a></li>
+	  <li style="color:#ccccb3;text-shadow: 2px 3px 2px black;"><a class="active" href="about.html" >About Me</a></li>
+	  <li style="color:#ccccb3;text-shadow: 2px 3px 2px black;"><a href="bio.html" target="_blank">Bio</a></li>  
+	</ul>
+	</div>
+<div class="card";>
+<h2 style="text-align:left;font:normal 5vm arial;text-transform:uppercase;colour:black;">technology</h2>
+<p>the first thing is mobiles.they are developing rapidly this days and became major part in ones life. I often check for latest upadate in mobile trends and technology.The smartphone makers are smart these days, As they make narrow differences in features</p>
+</div>
+<div class="card">
+<h2 style="text-align:left;font:normal 5vm arial;text-transform:uppercase;colour:black;"> cars&bikes </h2>
+<p>I am big fan of customs.softails,crusier,dirtbikeschoppers,diggers are my favorites.in cars mustangs,chevrolet, are my favorites. </p>   
+<div class="gallery">
+  <a target="_blank" href="soft-tail.jpg">
+    <img src="soft-tail.jpg" alt="soft-tail" width="600" height="400">
+  </a>
+  <div class="desc">soft-tail</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="2000x1331digger.jpg">
+    <img src="2000x1331digger.jpg" alt="digger bike" width="600" height="400">
+  </a>
+  <div class="desc">custom digger</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="chopper1024x768.jpg">
+    <img src="chopper1024x768.jpg" alt="chopper" width="600" height="400">
+  </a>
+  <div class="desc">a chopper bike</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="mustang.jpg">
+    <img src="mustang.jpg" alt="mustang" width="600" height="400">
+  </a>
+  <div class="desc">classic ford mustang</div>
+</div>
+</div>
+	<div class="footer">
+		<div class="image">										<!--social  buttons-->
+	<p style="color:#ccccb3;text-shadow: 2px 3px 2px black;">copyrights reserved 2020<a href="facebook.png" class="fa fa-facebook"><img src="facebook.png" width="25" height="25"><a href="#" class="fa fa-google"><img src="google-plus.png" width="25" height="25"></a></a></p>
+	<p style="font:normal  1vw arial;text-align:right;">follow us on</p>
+	</div>
+	</div>
+		</body>
+	</html>
