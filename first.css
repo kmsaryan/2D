@@ -1,0 +1,378 @@
+* {
+  box-sizing:border-box;
+}
+body {
+	background:#e6f5ff;
+  	word-wrap:break-word;
+	text-decoration:none;
+	text-align: justify;
+	text-justify: inter-word;
+	padding:10px;
+}
+}
+@media screen and (max-width: 600px) {  
+	}
+/* Add a black background color to the top navigation */
+.topnav {
+	background: linear-gradient(to bottom, #cc66ff 0%, #ccccff 100%);
+	overflow: hidden;
+	margin-top:3px;
+	position: sticky;
+	top:0;
+	margin-top:10px;
+	border-radius:5px;
+	border:	groove 2px #ccccb3;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px 14px;
+	text-decoration: none;
+	font-size: 15px;
+	border:	groove 1px #ccccb3;
+	border-radius:5px;
+	color: black;
+	transition:transform 2s padding 1s linear 0;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color:#e6f5ff;
+	box-shadow:1.5px 2px 2px 0 #008ae6;
+	color: black;
+	transform:translate(2,2);
+	padding:25px 25px;
+	font-weight:bold;
+	border-left:solid 3px #ccccb3
+}
+/* Add an active class to highlight the current page */
+.topnav a.active {
+	background-color:  #c2d6d6;
+	font-weight:bold;
+	transition:0.3s
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a{
+  display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 2px;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  animation: card 1s ease-in-out 0s 1 normal;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  margin-top:5px;
+  animation: card 2s ease-in-out 0s 1 normal;
+}
+@keyframes card {
+  0%   {transform:translate(-1000px,0px)}
+  100% {transform:translate(0px,0px);}
+}
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+ animation: card 2s ease-in-out 0s 1 alternate; 
+ background: linear-gradient(to bottom, #ff99ff 0%, #ccccff 100%);
+}
+
+ .card:hover{
+  box-shadow: 0 8px 16px 0 #008ae6;
+  
+ }
+.container {
+  width:100%;
+  background: #ddd;
+  margin-left:10px;
+}
+	/*scrollbar*/
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+	::-webkit-scrollbar-track {
+	  box-shadow: inset 0 0 5px grey; 
+	  border-radius: 0px;
+	}
+
+	::-webkit-scrollbar-thumb {
+	  background: #4169E1;
+	  border-radius: 5px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+background: linear-gradient(to bottom, #cc66ff 0%, #ccccff 100%);
+	}
+
+/* Header/Blog Title */
+.header {
+  padding: 5px;
+background: linear-gradient(to bottom, #cc66ff 0%, #ccccff 100%);
+ animation: card 1s ease-in-out 0s 1 alternate;
+}
+
+
+ h1 {
+  font-size: 25px;
+  font-weight:bold;
+  color:#3d5c5c;
+  text-align: center;
+  text-transform:uppercase;
+  text-shadow:  1px 2px 1px gray;
+  border-radius:5px;
+	margin-bottom:4px;
+}
+h2{
+  color:#3d5c5c;
+  text-shadow:2px 1px 1px black;
+  text-transform:uppercase;
+  font:normal bold 20px arial;
+margin-bottom:4px;
+}
+h3{
+  color:#3d5c5c;
+  text-shadow:2px 1px 1px black;
+  text-transform:uppercase;  font-weight:bold;
+margin-bottom:4px;
+}
+h4{
+  color:#3d5c5c;
+  text-shadow:2px 1px 1px black;
+  text-transform:uppercase; 
+  font-weight:bold;
+margin-bottom:4px;
+}
+h5{
+  color:#3d5c5c;
+  text-shadow:2px 1px 1px black;
+  text-transform:uppercase;  font-weight:bold;
+margin-bottom:4px;
+}
+
+h6{
+  color:#3d5c5c;
+  text-shadow:2px 1px 1px black;
+  text-transform:uppercase;
+  font-weight:bold;
+  margin-bottom:4px;
+}
+p{
+	color:black;
+	word-wrap:break-word;
+	text-indent:15px;
+	text-transform:capitalize;
+	font:normal 1vw arial;
+	line-height:1.8;
+	text-align: justify;
+	text-justify: inter-word;
+	padding:10px;
+}
+/*list styles*/
+ul {
+  list-style-image: url('https://fg-a.com/bullets/bullet-pyramid-red-2018.gif');
+  columns: 225px;
+}
+hr{
+	margin-top:2px;
+	margin-bottom:2px;
+	border:	solid 2px #cc99ff;
+}
+button{
+	text-align:center;
+	text-decoration:none;
+	background:linear-gradient(to bottom, #cc99ff 0%, #cc33ff 100%);
+	border-radius:5px;
+	color:#3d5c5c;
+	text-shadow:2px 1px 1px black;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding:10px;
+}
+a{
+text-decoration:none;
+}
+button:hover{
+	box-shadow:2px 2px 2px 0 #008ae6;
+	padding:12px;
+	text-decoration:none;
+opacity:0.8;
+}
+@media screen and (max-width: 600px) {
+h1 h2 h3 h4 h5 h5{font-size-adjust:5vw;}
+	p{font-size:2vw;}
+}
+
+.welcome{
+	padding: 50px 0px;
+	margin:20px;
+	background:linear-gradient(to bottom, #cc99ff 0%, #cc33ff 100%);
+	text-shadow: 5px 2px 3px gray;
+	text-align:center;
+	color:#3d5c5c;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+}
+/*table starts*/
+
+table {
+ border:3px black solid;/*total-table*/
+  width: 70%;
+  margin:10px;
+background: linear-gradient(to bottom, #cc66ff 0%, #ccccff 100%);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+th, td {
+  padding: 5px;			/*td-cell;th-header*/
+  text-align: CENTER;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {opacity:0.5;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+/*table-ends*/
+
+.skills {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+.html {width: 70%; background-color: #4CAF50;}
+.css {width: 50%; background-color: #2196F3;}
+.js {width: 25%; background-color: #f44336;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn  .column{   
+    width: 100%;
+    padding: 0;
+  }
+}
+	.fa {
+	text-decoration:none;
+	padding:0 5px;
+	margin:0 3px;
+
+	overflow:hidden;
+	}
+	.fa:hover {
+	opacity:0.8;
+	
+	}
+	.fa-facebook {
+	float:right;
+	}	
+	.fa-envelope{
+	float:right;
+	} 
+	.fa-github{
+	float:right;
+	}
+	.fa-heart{
+	color:red;
+	padding:0 10px 10px 0;
+	animation:heart 2s ease-in-out 3s infinite normal;
+	}
+	.fa-circle{
+	color:linear-gradient(to bottom, #cc99ff 0%, #cc33ff 100%);
+	margin-right:10px;
+	animation:heart 2s ease-in-out 3s infinite normal;
+	}
+@keyframes heart{
+	0{transform:scale(1,1)}
+	50%{transform:scale(2,2)}
+	100%{transform:scale(1,1)}
+	}
+	img{
+	object-fit: contain;
+	}
+/* Footer */
+.footer{
+	overflow:hidden;
+   width: 100%;
+   color: white;
+   text-align: center;
+	width:100%;
+	background: linear-gradient(to bottom, #cc66ff 0%, #ccccff 100%);
+	box-shadow:1px 2px 1px gray;
+	border-radius:5px;
+	bottom:0;
+	word-spacing:4px;
+	word-wrap:break-word;
+	text-justify: inter-word;
+}
+.footer:hover{
+	color:black;
+	box-shadow: 0 8px 16px 0 #008ae6;
+
+ }
+@media screen and (max-width: 600px) {
+	.footer{ margin:10px 0px 0px 0px;
+	}
